@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-size:14px;
+}
+
+.outer-Container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(208, 100%, 97%);
+}
+
+.inner-container {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+    width:700px;
+    border:1px solid black;
+    padding:10px 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius:10px;
+}
+
+.notifications-section{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#notificationTitle {
+    font-weight:bold;
+    font-size:2rem;
+}
+
+.notification-box{
+    display:flex;
+    justify-content:flex-start;
+    padding:10px;
+    cursor:pointer;
+    /* border: 1px solid black; */
+    width:100%;
+    gap:1.5rem;
+}
+
+
+.notificationNumber {
+    border-radius:10px;
+    padding:4px;
+    color:white;
+    opacity:0.5;
+}
+
+#markRead {
+    cursor:pointer;
+    opacity:0.9;
+    position:relative;
+    left:80px;
+}
+
+
+.timeStamp {
+    opacity:0.5;
+}
+
+.name {
+    font-weight:bold;
+}
+
+.messageContainerActive {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:10px;
+    border-radius:10px;
+}
+
+
+
+
+.notification-box img {
+    height:50px;
+    width:auto;
+}
+
+.chess-img {
+    margin-left:10rem;
+}
+
+.notification-p{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*  CSS styles for when active */
+.active {
+    background-color: hsl(209, 100%, 95%);
+}
